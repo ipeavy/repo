@@ -1,5 +1,5 @@
 {
-	"name": "frontend-starter",
+	"name": "ohSoSubtleFragrances",
 	"version": "1.0.3",
 	"description": "FrontEnd Starter - boilerplate for easy building sites using task manager Gulp 4",
 	"keywords": [
@@ -28,7 +28,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/zakandaiev/frontend-starter"
+		"url": "https://github.com/ipeavy/"
 	},
 	"main": "index.js",
 	"scripts": {
@@ -45,7 +45,7 @@
 			"@babel/preset-env"
 		]
 	},
-	"author": "github.com/zakandaiev",
+	"author": "github.com/ipeavy",
 	"license": "MIT",
 	"devDependencies": {
 		"@babel/core": "^7.17.9",
