@@ -1,0 +1,28 @@
+// 640px, 1150px, 1400px
+$breakpoints-up: ('xs': '0',
+	'xxsmall': '387px',
+	'small': '576px',
+	'medium': '768px',
+	'large': '992px',
+	'xlarge': '1200px',
+	'xxl': '1400px'
+);
+
+// 639px, 1149px, 1399px
+$breakpoints-down: ('xs': '575px',
+	'small': '767px',
+	'medium': '991px',
+	'large': '1199px',
+	'xl': '1399px');
+
+@mixin breakpoint($size) {
+	@media (min-width: map-get($breakpoints-up, $size)) {
+		@content;
+	}
+}
+
+@mixin breakpoint-down($size) {
+	@media (max-width: map-get($breakpoints-down, $size)) {
+		@content;
+	}
+}

@@ -2,4 +2,19 @@
 	display: block;
 	width: 100%;
 	border-bottom: $border $color-border;
+
+	.nav{
+		display: flex;
+
+		.link-container{
+			
+		}
+
+		.logo-container{
+			img{
+				width: 13rem;
+				height: 13rem;
+			}
+		}
+	}
 }
