@@ -6,6 +6,7 @@
 	.nav {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 
 		.link-container {
 			@include breakpoint-down(small) {
@@ -52,7 +53,6 @@
 		}
 
 		.input-container {
-			width: 12rem;
 			text-align: right;
 			display: flex;
 			align-items: center;
