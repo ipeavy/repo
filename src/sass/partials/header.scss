@@ -15,22 +15,22 @@
 		}
 
 		.ham-container {
-			width: 30px;
-			height: 20px;
+			width: 36px;
+			height: 15px;
 			position: relative;
 			cursor: pointer;
 
 			&.ham-container.active .bar:first-child {
-				transform: translateY(8px) rotate(45deg);
+				transform: translateY(7px) rotate(45deg);
 			}
 
 			&.ham-container.active .bar:last-child {
-				transform: translateY(-8px) rotate(-45deg);
+				transform: translateY(-7px) rotate(-45deg);
 			}
 
 			.bar {
 				width: 100%;
-				height: 4px;
+				height: 2px;
 				background-color: #000;
 				position: absolute;
 				transition: transform 0.3s;
