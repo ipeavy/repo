@@ -26,14 +26,11 @@ body {
 	font-family: $font;
 	font-size: 1.4rem;
 	font-weight: $font-normal;
-	line-height: 1.6;
+	line-height: 1;
 	position: relative;
 	overflow-x: hidden;
 	color: $color-text;
 	background-color: $color-body;
-	@media (max-width: 768px) {
-		line-height: 1.2;
-	}
 }
 
 h1, h2, h3, h4, h5, h6 {
