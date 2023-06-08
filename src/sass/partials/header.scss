@@ -3,18 +3,61 @@
 	width: 100%;
 	border-bottom: $border $color-border;
 
-	.nav{
+	.nav {
 		display: flex;
+		align-items: center;
 
-		.link-container{
-			
+		.link-container {
+			@include breakpoint-down(small) {
+				display: none;
+			}
 		}
 
-		.logo-container{
-			img{
-				width: 13rem;
-				height: 13rem;
+		.ham-container {
+			width: 30px;
+			height: 20px;
+			position: relative;
+			cursor: pointer;
+
+			&.ham-container.active .bar:first-child {
+				transform: translateY(9px) rotate(45deg);
 			}
+
+			&.ham-container.active .bar:last-child {
+				transform: translateY(-9px) rotate(-45deg);
+			}
+
+			.bar {
+				width: 100%;
+				height: 4px;
+				background-color: #000;
+				position: absolute;
+				transition: transform 0.3s;
+			}
+
+			.bar:first-child {
+				top: 0;
+			}
+
+			.bar:last-child {
+				bottom: 0;
+			}
+		}
+
+		.logo-container {
+			img {
+				width: 10rem;
+				height: 10rem;
+			}
+		}
+
+		.input-container {
+			width: 12rem;
+			text-align: right;
+			display: flex;
+			align-items: center;
+			justify-content: right;
+			font-size: 1.8rem;
 		}
 	}
 }
