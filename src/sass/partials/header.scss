@@ -5,6 +5,8 @@
 	background-color: #FFDABF;
 
 	.nav {
+		max-width: 1368px;
+		margin: 0 auto;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -38,6 +40,8 @@
 				a {
 					font-size: 2rem;
 					color: #fff;
+					padding: 0;
+					margin-right: 1rem;
 				}
 
 			}
@@ -94,10 +98,14 @@
 			display: flex;
 			align-items: center;
 			justify-content: right;
-			font-size: 1.8rem;
 
 			a {
 				color: #fff;
+				font-size: 1.8rem;
+
+				@include breakpoint(medium) {
+				font-size: 2rem;
+			}
 			}
 		}
 	}
