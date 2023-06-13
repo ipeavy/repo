@@ -23,7 +23,7 @@ html, body {
 body {
 	display: flex;
 	flex-direction: column;
-	font-family: $font;
+	font-family: poppins;
 	font-size: 1.4rem;
 	font-weight: $font-normal;
 	line-height: 1;
@@ -157,7 +157,7 @@ hr {
 	padding: 0 4em;
 	position: relative;
 	@media (max-width: 575px) {
-		padding: 0 2em;
+		padding: 0 2rem;
 	}
 }
 
@@ -308,5 +308,6 @@ hr {
 
 @import "partials/header";
 @import "partials/footer";
+@import "partials/home";
 
 @import "partials/helpers";

@@ -1,0 +1,31 @@
+// home section / landing page
+
+.home-section{
+    height: 100vh;
+    background-color: #FFDABF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    h1{
+        font-size: 3.2rem;
+    }
+
+    a{
+        background-color: #fff;
+        display: inline-block;
+        padding: 2rem 4rem;
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: #FFDABF;
+        border: none;
+    }
+}
+
+// top product section
+
+
+.top-products{
+
+}
