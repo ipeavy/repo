@@ -23,6 +23,10 @@
 			align-items: center;
 			flex-direction: column;
 
+			&.visible{
+				visibility: visible;
+			}
+
 			a {
 				z-index: 3;
 				font-size: 3rem;
