@@ -3,26 +3,36 @@
 	width: 100%;
 	background-color: #FFDABF;
 
+	.logo-container {
+		margin: 0 auto;
+
+		img {
+			width: 10rem;
+			height: 10rem;
+		}
+	}
+
 	.nav {
 		max-width: 1368px;
 		margin: 0 auto;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 
 		.link-container {
-			visibility: hidden;
-			position: absolute;
-			height: 100vh;
-			width: 100%;
-			top: 0;
-			left: 0;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
+			@include breakpoint-down(small) {
+				visibility: hidden;
+				position: absolute;
+				background-color: aqua;
+				height: 100vh;
+				width: 100%;
+				top: 2rem;
+				left: 0rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
 
-			&.visible{
+			}
+
+			&.visible {
 				visibility: visible;
 			}
 
@@ -35,13 +45,15 @@
 
 			@include breakpoint(medium) {
 				visibility: visible;
-				position: relative;
+				position: absolute;
 				height: auto;
 				width: auto;
 				flex-direction: row;
+				top: 4rem;
+				left: 5rem;
 
 				a {
-					font-size: 2rem;
+					font-size: 1.5rem;
 					color: #fff;
 					padding: 0;
 					margin-right: 1rem;
@@ -56,16 +68,24 @@
 			z-index: 3;
 			width: 36px;
 			height: 15px;
-			position: relative;
+			position: absolute;
+			top: 4rem;
+			left: 2rem;
 			cursor: pointer;
+
+			@include breakpoint(medium) {
+				display: none;
+			}
 
 
 			&.ham-container.active .bar:first-child {
 				transform: translateY(7px) rotate(45deg);
+				background-color: #000;
 			}
 
 			&.ham-container.active .bar:last-child {
 				transform: translateY(-7px) rotate(-45deg);
+				background-color: #000;
 			}
 
 			.bar {
@@ -84,31 +104,30 @@
 				bottom: 0;
 			}
 
-			@include breakpoint(medium) {
-				display: none;
-			}
-		}
 
-		.logo-container {
-			img {
-				width: 10rem;
-				height: 10rem;
-			}
 		}
 
 		.input-container {
 			text-align: right;
 			display: flex;
 			align-items: center;
+			position: absolute;
+			right: 2rem;
+			top: 4rem;
 			justify-content: right;
+
+			@include breakpoint(large) {
+				right: 5rem;
+				top: 4rem;
+			}
 
 			a {
 				color: #fff;
 				font-size: 1.8rem;
 
 				@include breakpoint(medium) {
-				font-size: 2rem;
-			}
+					font-size: 1.5rem;
+				}
 			}
 		}
 	}
