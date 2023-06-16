@@ -1,5 +1,20 @@
 .footer {
 	display: block;
 	width: 100%;
-	border-top: $border $color-border;
+	background-color: antiquewhite;
+
+	.footer-container {
+		max-width: 1368px;
+		margin: 0 auto;
+
+		.info{
+
+			.footer-logo{
+				img{
+					width: 10rem;
+					height: 10rem;
+				}
+			}
+		}
+	}
 }
