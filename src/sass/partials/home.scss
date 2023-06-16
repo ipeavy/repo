@@ -1,6 +1,6 @@
 // home section / landing page
 
-.home-section{
+.home-section {
     height: 100vh;
     background-color: #FFDABF;
     display: flex;
@@ -8,11 +8,12 @@
     text-align: center;
     align-items: center;
 
-    h1{
+    h1 {
         font-size: 3.2rem;
+        color: #fff;
     }
 
-    a{
+    a {
         background-color: #fff;
         display: inline-block;
         padding: 2rem 4rem;
@@ -26,6 +27,30 @@
 // top product section
 
 
-.top-products{
+.top-products {
+
+
+    .sub-heading {
+        font-size: 1.7rem;
+        font-weight: 300;
+        line-height: 1.9;
+        letter-spacing: .1rem;
+
+        @include breakpoint(medium) {
+            font-size: 2rem;
+        }
+    }
+
+    .button {
+        background-color:#DF7C6D;
+        display: inline-block;
+        padding: 2rem 4rem;
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: #Fff;
+        border: none;
+        margin: 10rem 0;
+    }
+
 
 }
