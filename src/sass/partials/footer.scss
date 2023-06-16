@@ -1,20 +1,31 @@
 .footer {
 	display: block;
 	width: 100%;
-	background-color: antiquewhite;
+	padding: 1rem 0 6rem 0;
+	color: #fff;
+	background-color: #DF7C6D;
 
 	.footer-container {
 		max-width: 1368px;
 		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
 
-		.info{
+		.info {
+			font-size: 1.7rem;
+			letter-spacing: .1rem;
 
-			.footer-logo{
-				img{
+			.footer-logo {
+				img {
 					width: 10rem;
 					height: 10rem;
+					margin: 2rem 0;
 				}
 			}
+		}
+
+		.social-media {
+			margin: 5rem 0;
 		}
 	}
 }
