@@ -27,14 +27,14 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
-	font-family: poppins;
+	font-family: "hwt-aetna", serif;
 	font-size: 1.4rem;
 	font-weight: $font-normal;
 	line-height: 1;
 	position: relative;
 	overflow-x: hidden;
 	color: $color-text;
-	background-color: $color-body;
+	background-color: #E0DDD7;
 }
 
 h1,

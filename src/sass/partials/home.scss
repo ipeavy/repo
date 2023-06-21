@@ -2,19 +2,21 @@
 
 .home-section {
     height: 100vh;
-    background-color: #FFDABF;
+    background-color: #E0DDD7;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
 
     h1 {
-        font-size: 3.2rem;
-        color: #fff;
+        font-size: 6.0rem;
+        text-align: left;
+        color: #000000;
+        font-family: "hwt-aetna", serif;
     }
 
     a {
-        background-color: #fff;
+        background-color: #DF7C6D;
         display: inline-block;
         padding: 2rem 4rem;
         font-weight: bold;
