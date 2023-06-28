@@ -11,16 +11,16 @@
         flex-direction: row;
     }
 
-    .heading-container{
+    .heading-container {
         width: 300px;
         order: 1;
     }
 
-    .home-img-container{
+    .home-img-container {
         order: 0;
     }
 
-    .home-btn-container{
+    .home-btn-container {
         order: 2;
     }
 
@@ -44,15 +44,6 @@
     }
 
 
-
-    h1 {
-        font-size: 11rem;
-        margin: 0;
-        line-height: 9rem;
-        text-align: left;
-        color: #000000;
-        font-family: "hwt-aetna-double-extra-conde", serif;
-    }
 
     a {
         background-color: #DF7C6D;
@@ -82,16 +73,30 @@
         }
     }
 
-    .button {
-        background-color: #DF7C6D;
-        display: inline-block;
-        padding: 2rem 4rem;
-        font-weight: bold;
-        font-size: 1.6rem;
-        color: #Fff;
-        border: none;
-        margin: 10rem 0;
+    .fav-btn-container {
+
+        .button {
+            font-weight: 600;
+            text-align: center;
+            font-family: "franklin-gothic-urw", sans-serif;
+            background-color: transparent;
+            display: block;
+            padding: 18px 20px;
+            border: solid 3px #000000;
+            font-size: 2.5rem;
+            color: #000000;
+            margin: 4rem 0;
+            width: 33rem;
+            border-radius: 100px;
+
+            span {
+                display: block;
+            }
+        }
+
     }
+
+
 
 
 }
