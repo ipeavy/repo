@@ -95,8 +95,30 @@
         }
 
     }
+}
 
+.subscribe-section{
+    background-color: #2A3419;
+    color: #fff;
 
+    h2{
+        color: #fff;
+    }
 
+    p{
+        font-family: "franklin-gothic-urw", sans-serif;
+        font-size: 2.4rem;
+    }
 
+    .termsAndCon{
+        p{
+            font-size: 1.5rem;
+        }
+
+        .terms{
+            font-size: 1.5rem;
+            font-family: "franklin-gothic-urw", sans-serif;
+            color: #fff;
+        }
+    }
 }
