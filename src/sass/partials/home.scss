@@ -176,6 +176,26 @@
             justify-content: space-between;
         }
 
+        .iframe-form {
+            form {
+                #mc_embed_signup_scroll {
+                    .indicates-required {
+                        color: #fff;
+                        font-size: 1.7rem;
+                        font-family: "franklin-gothic-urw", sans-serif;
+                    }
+
+                    .label {
+                        color: #fff;
+                        text-align: left;
+                        font-size: 1.7rem;
+                        font-weight: 300;
+                        font-family: "franklin-gothic-urw", sans-serif;
+                    }
+                }
+            }
+        }
+
     }
 
     .termsAndCon {
