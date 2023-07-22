@@ -4,7 +4,10 @@
     background-color: #E0DDD7;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+     max-width: 1368px;
+    justify-content: space-between;
+    margin: 0 auto;
+
     text-align: left;
 
     @include breakpoint(medium) {
@@ -14,10 +17,16 @@
     .heading-container {
         width: 300px;
         order: 1;
+         @include breakpoint(medium) {
+            order: 0;
+         }
     }
 
     .home-img-container {
         order: 0;
+        @include breakpoint(medium) {
+            order: 1;
+         }
     }
 
     .home-btn-container {
@@ -60,6 +69,8 @@
 
 
 .top-products {
+    max-width: 1368px;
+    margin: 0 auto;
 
 
     .sub-heading {
