@@ -75,6 +75,10 @@
     margin: 0 auto;
 
 
+    .fav-oil-header {
+        padding: 0 0 10rem 0;
+    }
+
 
 
 
@@ -150,6 +154,7 @@
     background-color: #2A3419;
     color: #fff;
 
+
     h2 {
         color: #fff;
         padding: 1rem 0;
@@ -158,6 +163,11 @@
     p {
         font-family: "franklin-gothic-urw", sans-serif;
         font-size: 2.4rem;
+    }
+
+    .subscribe-container {
+        max-width: 1368px;
+        margin: 0 auto;
     }
 
     .termsAndCon {
