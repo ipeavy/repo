@@ -18,6 +18,7 @@
 		margin: 0 auto;
 
 		.link-container {
+			font-family: franklin-gothic-atf, sans-serif;
 			@include breakpoint-down(small) {
 				visibility: hidden;
 				position: absolute;
@@ -46,17 +47,13 @@
 
 			@include breakpoint(medium) {
 				visibility: visible;
-				position: absolute;
 				height: auto;
 				width: auto;
-				flex-direction: row;
-				top: 4rem;
-				left: 5rem;
 
 				a {
-					font-size: 1.5rem;
+					font-size: 1.7rem;
 					color: #000000;
-					padding: 0;
+					padding: 2rem;
 					margin-right: 1rem;
 				}
 
