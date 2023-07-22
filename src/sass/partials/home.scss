@@ -4,7 +4,7 @@
     background-color: #E0DDD7;
     display: flex;
     flex-direction: column;
-     max-width: 1368px;
+    max-width: 1368px;
     justify-content: space-between;
     margin: 0 auto;
 
@@ -17,16 +17,18 @@
     .heading-container {
         width: 300px;
         order: 1;
-         @include breakpoint(medium) {
+
+        @include breakpoint(medium) {
             order: 0;
-         }
+        }
     }
 
     .home-img-container {
         order: 0;
+
         @include breakpoint(medium) {
             order: 1;
-         }
+        }
     }
 
     .home-btn-container {
@@ -73,6 +75,9 @@
     margin: 0 auto;
 
 
+
+
+
     .sub-heading {
         font-size: 1.7rem;
         font-weight: 300;
@@ -82,6 +87,37 @@
         @include breakpoint(medium) {
             font-size: 2rem;
         }
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint-down(medium) {
+            flex-wrap: wrap;
+        }
+
+        .image {
+            flex: 1;
+            margin: 5px;
+            /* Adjust margin spacing between images */
+
+            @include breakpoint-down(medium) {
+                flex: 0 0 calc(50% - 10px);
+                /* 2 columns with spacing */
+            }
+
+            @include breakpoint-down(small) {
+                flex: 0 0 100%;
+                /* 1 column, full width */
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
     }
 
     .fav-btn-container {
@@ -108,42 +144,42 @@
     }
 }
 
-.subscribe-section{
+.subscribe-section {
     background-color: #2A3419;
     color: #fff;
 
-    h2{
+    h2 {
         color: #fff;
         padding: 1rem 0;
     }
 
-    p{
+    p {
         font-family: "franklin-gothic-urw", sans-serif;
         font-size: 2.4rem;
     }
 
-    .termsAndCon{
-        
-        p{
+    .termsAndCon {
+
+        p {
             font-size: 1.5rem;
             margin: 0;
             padding: 1rem;
         }
 
-        .terms{
+        .terms {
             font-size: 1.5rem;
             font-family: "franklin-gothic-urw", sans-serif;
             color: #fff;
         }
     }
 
-    #mc_embed_signup{
-        form{
+    #mc_embed_signup {
+        form {
             margin: 0;
             color: #fff;
         }
 
-        .button{
+        .button {
             font-weight: 600;
             text-align: center;
             font-family: "franklin-gothic-urw", sans-serif;
