@@ -12,10 +12,23 @@
 		justify-content: space-between;
 
 		.info {
+			font-family: "franklin-gothic-urw", sans-serif;
 			font-size: 1.7rem;
 			letter-spacing: .1rem;
 
 			.footer-logo {
+				text-align: center;
+
+				.subtle{
+					font-family: "roboto-slab", serif;
+					font-size: 1.3rem;
+				}
+
+				.parfum{
+					font-family: "montserrat", sans-serif;
+					font-size: .9rem;
+				}
+
 				img {
 					width: 4rem;
 					height: 4rem;
