@@ -6,10 +6,23 @@
 
 	.logo-container {
 		margin: 0 auto;
+		text-align: center;
+		font-weight: 600;
+
+		.subtle {
+			font-family: "roboto-slab", serif;
+			font-size: 1.5rem;
+			margin: 0;
+		}
+
+		.parfum {
+			font-family: "montserrat", sans-serif;
+			font-size: 1rem;
+		}
 
 		img {
-			width: 4rem;
-			height: 4rem;
+			width: 5rem;
+			height: 5rem;
 		}
 	}
 
@@ -21,6 +34,7 @@
 
 		.link-container {
 			font-family: franklin-gothic-atf, sans-serif;
+
 			@include breakpoint-down(small) {
 				visibility: hidden;
 				position: absolute;
@@ -124,7 +138,7 @@
 				color: #000000;
 				font-size: 1.8rem;
 
-				&.black{
+				&.black {
 					color: #000;
 				}
 
